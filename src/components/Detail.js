@@ -1,14 +1,14 @@
 import React from 'react';
 import { Typography, Stack, Button } from '@mui/material';
 
-import BodyPartImage from '../assets/icons/body-part.png';
+import * as icons from '../assets/icons';
 import TargetImage from '../assets/icons/target.png';
 import EquipmentImage from '../assets/icons/equipment.png';
 import BodyPart from './BodyPart';
 
 const Detail = ({ exerciseDetail }) => {
   const { bodyPart, gifUrl, name, target, equipment } = exerciseDetail;
-
+  const BodyPartImage = icons[`${bodyPart}`] || bodyPart === "lower arms" && icons['lower_arms'] || bodyPart === "upper arms" && icons['upper_arms'] || bodyPart === "lower legs" && icons['lower_legs'] || bodyPart === "upper legs" && icons['upper_legs'];
   const extraDetail = [
     {
       icon: BodyPartImage,

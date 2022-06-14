@@ -1,0 +1,12 @@
+export { default as gym } from './gym.png';
+export { default as all } from './all.png';
+export { default as back } from './back.png';
+export { default as cardio } from './cardio.png';
+export { default as chest } from './chest.png';
+export { default as lower_arms } from './lower_arms.png';
+export { default as lower_legs } from './lower_legs.png';
+export { default as neck } from './neck.png';
+export { default as shoulders } from './shoulder.png';
+export { default as upper_arms } from './upper_arms.png';
+export { default as upper_legs } from './upper_legs.png';
+export { default as waist } from './waist.png';
