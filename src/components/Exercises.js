@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Pagination } from '@mui/material';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box, Stack, Typography, Pagination } from '@mui/material';
 
 import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
 
 const Exercises = ({exercises, setExercises, bodyPart }) => {
-  const [currentPage, setcurrentPage] = useState(1);
+  const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
   const indexOfLastExercise = currentPage * exercisesPerPage;
@@ -14,7 +13,7 @@ const Exercises = ({exercises, setExercises, bodyPart }) => {
   const currentExercises = exercises.slice(indexOfFirstExercise, indexOfLastExercise);
 
   const paginate = (e, value) => {
-    setcurrentPage(value);
+    setCurrentPage(value);
     window.scrollTo({top: 1800, behavior: 'smooth'});
   }
 
