@@ -10,9 +10,7 @@ const Footer = () => {
         <img src={Logo} alt="logo" width="300px" height="200px" />
         <Typography variant="h5" pb="40px">
           Made with 
-          <span role="img" aria-label="heart">
-            ❤️
-          </span> 
+          sweat and blood
           by Malte
         </Typography>
       </Stack>

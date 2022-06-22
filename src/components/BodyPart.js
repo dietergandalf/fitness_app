@@ -4,14 +4,14 @@ import { Stack, Typography } from '@mui/material';
 import * as icons from '../assets/icons';
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
-    const Icon = icons[`${item}`] || item === "lower arms" && icons['lower_arms'] || item === "upper arms" && icons['upper_arms'] || item === "lower legs" && icons['lower_legs'] || item === "upper legs" && icons['upper_legs'];
+    const Icon = icons[`${item}`] || item === "lower arms" && icons.lower_arms || item === "upper arms" && icons.upper_arms || item === "lower legs" && icons.lower_legs || item === "upper legs" && icons.upper_legs;
     
     return (
         <Stack
             type="button"
             alignItems="center"
             justifyContent="center"
-            className="bodyPart-card"
+            
             sx={{
                 borderTop: bodyPart === item ? '4px solid #FF2625' : '',
                 backgroundColor:'#FFF',

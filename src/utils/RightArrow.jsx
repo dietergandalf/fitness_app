@@ -10,7 +10,7 @@ const RightArrow = () => {
   return (
       <Typography 
         onClick={() => scrollNext()} 
-        className="left-arrow"
+        
       >
         <img 
           src={RightArrowIcon} 
